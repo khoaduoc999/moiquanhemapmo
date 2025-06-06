@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you date me?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background animation -->
+    <div class="background">
+        <div class="gradient-bg"></div>
+    </div>
+
+    <!-- Theme toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="toggle-label">
+            <div class="toggle-circle"></div>
+        </label>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Screen 1: Initial question -->
+        <section class="screen" id="screen-1" active>
+            <h1>Hí mấy con ghẹ...</h1>
+            <p class="question">Will you go on a date with me?</p>
+            <div class="buttons">
+                <button class="btn btn-yes" id="btn-yes">YES! ♥</button>
+                <button class="btn btn-no" id="btn-no">NO! ☹</button>
+            </div>
+        </section>
+
+        <!-- Screen 2: Confirmation -->
+        <section class="screen" id="screen-2">
+            <h1>Yayyy!!! 🌸</h1>
+            <p>So excited to see you!!!</p>
+            <p>I'll make it special, I promise!</p>
+            <button class="btn btn-continue" id="continue-to-place">Let's choose a place ♥</button>
+        </section>
+
+        <!-- Screen 3: Place selection -->
+        <section class="screen" id="screen-3">
+            <h1>Pick a place...</h1>
+            <p>Where would you like to go?</p>
+            <div class="options-grid place-options">
+                <div class="option" data-value="cafe">☕ Café</div>
+                <div class="option" data-value="restaurant">🍽️ Restaurant</div>
+                <div class="option" data-value="cinema">🎬 Cinema</div>
+                <div class="option" data-value="park">🌳 Park</div>
+                <div class="option" data-value="mall">🛍️ Mall</div>
+                <div class="option" data-value="city">🏙️ Around the City</div>
+                <div class="option" data-value="other">✨ Somewhere Else</div>
+            </div>
+            <p class="confirmation-text">Nice choice! 💕</p>
+            <button class="btn btn-continue" id="continue-to-time">Continue ♥</button>
+        </section>
+
+        <!-- Screen 4: Time selection -->
+        <section class="screen" id="screen-4">
+            <h1>Pick a when...</h1>
+            <p>What time would work for you?</p>
+            <div class="date-time-picker">
+                <div class="date-picker">
+                    <label>Date</label>
+                    <input type="date" id="date-input">
+                </div>
+                <div class="time-picker">
+                    <label>Time</label>
+                    <input type="time" id="time-input">
+                </div>
+                <div class="time-actions">
+                    <button class="action-btn" id="remove-time">✕</button>
+                </div>
+            </div>
+            <button class="btn btn-outline" id="add-time">+ Add another option</button>
+            <p class="confirmation-text">Perfect time! 💕</p>
+            <button class="btn btn-continue" id="continue-to-food">Confirm ♥</button>
+        </section>
+
+        <!-- Screen 5: Food selection -->
+        <section class="screen" id="screen-5">
+            <h1>What would you like to eat?</h1>
+            <p>Choose whatever you desire 😋</p>
+            <p class="selection-label">Select your food preferences</p>
+            <div class="options-grid food-options">
+                <div class="option" data-value="bun-dau">Bún đậu mắm tôm</div>
+                <div class="option" data-value="pho">Phở</div>
+                <div class="option" data-value="bun-bo">Bún Bò 🍜</div>
+                <div class="option" data-value="my-quang">Mỳ Quảng</div>
+                <div class="option" data-value="my-cay">Mỳ cay 😝</div>
+                <div class="option" data-value="xien-ban">Xiên bẩn</div>
+                <div class="option" data-value="other">✨ Something else</div>
+            </div>
+            <p class="confirmation-text">Yummy! I'm already hungry! 🤤</p>
+            <button class="btn btn-continue" id="continue-to-drinks">Confirm ♥</button>
+        </section>
+
+        <!-- Screen 6: Drink selection -->
+        <section class="screen" id="screen-6">
+            <h1>Pick a drink...</h1>
+            <p>What would you like to drink?</p>
+            <p class="selection-label">Select your drink preferences</p>
+            <div class="options-grid drink-options">
+                <div class="option" data-value="coffee">Coffee</div>
+                <div class="option" data-value="tea">Tea</div>
+                <div class="option" data-value="boba">Boba Tea 🍵</div>
+                <div class="option" data-value="matcha">Matcha Latte</div>
+                <div class="option" data-value="smoothie">Smoothie</div>
+                <div class="option" data-value="other">✨ Something else</div>
+            </div>
+            <p class="confirmation-text">Sounds refreshing! 🥰</p>
+            <button class="btn btn-continue" id="continue-to-final">Confirm ♥</button>
+        </section>
+
+        <!-- Screen 7: Final screen -->
+        <section class="screen" id="screen-7">
+            <h1>All Set! 💕</h1>
+            <div class="celebration">🎉</div>
+            <p>Can't wait to see you!</p>
+            <p>Our date will be perfectly set.</p>
+            <p>I'll make it special to the best of my ability.</p>
+        </section>
+    </div>
+
+    <div class="scrollbar-decoration">
+        <div class="scrollbar-heart scroll-h1"></div>
+        <div class="scrollbar-heart scroll-h2"></div>
+        <div class="scrollbar-heart scroll-h3"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
