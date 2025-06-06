@@ -480,12 +480,12 @@ body.dark-theme .scrollbar-heart {
   50%      { transform: translateY(-8px) scale(1); }
 }
 @keyframes floatScrollbarHeart2 {
-  0%, 100% { transform: translateY(0) scale(0.4); }
-  50%      { transform: translateY(-8px) scale(0.4); }
+  0%, 100% { transform: translateY(0) scale(0.6); }
+  50%      { transform: translateY(-8px) scale(0.6); }
 }
 @keyframes floatScrollbarHeart3 {
-  0%, 100% { transform: translateY(0) scale(0.2); }
-  50%      { transform: translateY(-8px) scale(0.2); }
+  0%, 100% { transform: translateY(0) scale(0.4); }
+  50%      { transform: translateY(-8px) scale(0.4); }
 }
 
 .scroll-h1 {
@@ -503,7 +503,7 @@ body.dark-theme .scrollbar-heart {
 }
 
 .scroll-h3 {
-  top: -10px;
+  top: 0px;
   right: 8px;
   animation: floatScrollbarHeart3 3s ease-in-out infinite;
   animation-delay: 1.5s;
